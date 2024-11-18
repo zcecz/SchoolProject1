@@ -42,20 +42,24 @@ document.addEventListener('scroll', function() {
   }
   
   //Shows sub-categories list
-  function showList(nr){
+  function showList(nr, img){
     if(document.getElementById('l' + nr).style.display !== "none"){
         document.getElementById('l' + nr).style.display = "none";
+        document.getElementById("Limg" + img).style.transform = "rotate(0deg)";
     }else{
         document.getElementById('l' + nr).style.display = "block";
+        document.getElementById("Limg" + img).style.transform = "rotate(180deg)";
     }
   }
   
   //Shows/Hides bottom sub-content
-  function show(nr){
+  function show(nr, img){
     if(document.getElementById("s" + nr).style.display !== "none"){
         document.getElementById("s" + nr).style.display = "none";
+        document.getElementById("img" + img).style.transform = "rotate(0deg)";
     }else{
         document.getElementById("s" + nr).style.display = "block";
+        document.getElementById("img" + img).style.transform = "rotate(180deg)";
     }
   }
   

@@ -227,6 +227,7 @@ section#services{
     font-family: "Cormorant", serif;
     font-optical-sizing: auto;
     font-style: normal;
+    position: relative;
 }
 
 .endContainer #end{
@@ -241,6 +242,15 @@ section#services{
     text-align: center;
     font-size: 0.5em;
     color: gray;
+}
+
+.downArrowjs{
+    position: absolute;
+    top: 6vh;
+    right: 20vw;
+    width: 15px;
+    height: 15px;
+    transition: ease all .5s;
 }
 
 /* Window styling */
@@ -336,7 +346,7 @@ input#sb{
 /* Menu Styling */
 
 #selection{
-    width: 80%;
+    width: 100%;
     margin: auto;
     text-align: center;
     position: relative;
@@ -372,6 +382,7 @@ input#sb{
     left: 0;
     right: 0;
     width: 100vw;
+    max-width: 100vw;
     height: 200vh;
     background-color: white;
 }
@@ -417,6 +428,13 @@ input#sb{
     margin: auto;
     display: none;
     padding-bottom: 2vh;
+}
+
+
+.downArrowjs1{
+    width: 10px;
+    height: 10px;
+    transition: ease all .5s;
 }
 
 .catName{
