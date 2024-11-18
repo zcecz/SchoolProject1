@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel='stylesheet' href='style.css'>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lancelot&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Dancing+Script:wght@400..700&family=Lancelot&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <title>Shopping Cart</title>
+    </head>
+    <script src="script.js"></script>
+    <body>
+        
+        <header id="fixedPos">
+            <div class="headerContent">
+                <a href="index.html">
+                    <div id="companyName" class="companyFont">MODA</div>
+                </a>
+                <table id="headerFunctions">
+                    <tr>
+                        <td>
+                            <a href="userCart.html">
+                                <img src="assets/userCart.png" alt="" class="imgFunctions">
+                            </a>
+                        </td>
+                        <td>
+                            <button id="search" onclick="windowShow(1)">
+                                <img src="assets/userSearch.png" alt="" class="imgFunctions" style="height: 30px;width: 30px;padding-right:6vw;">
+                            </button>
+                        </td>
+                        <td>
+                            <button id="menu" onclick="windowShow(2)">
+                                <img src="assets/menuButton.png" alt="" class="imgFunctions">
+                            </button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </header>
+
+        <section id="Window1">
+            <div class="divExitButton">
+                <button class="exitButton" onclick="windowHide(1)">
+                    <img src="assets/exitButton.png" alt="" class="imgFunctions">
+                </button>
+            </div>
+
+            <div id="txtSearch">
+                <p>Search</p>
+            </div>
+
+            <div class="sbFunction">
+                <div class="sb">
+                    <img src="assets/userSearch.png" alt="" class="imgFunctions" style="padding-top: 0.7vh;">
+                </div>
+                <div class="sb" style="width: 80%;">
+                    <input type="text" id="sb" placeholder="What are you looking for?">
+                </div>
+            </div>
+
+            <div id="trending">
+                <p id="bold">
+                    Trending Now
+                </p>
+                <p class="txt">
+                    WOMENS FW24 COLLECTION
+                </p>
+                <p class="txt">
+                    MENS FW24 COLLECTION
+                </p>
+            </div>
+        </section>
+
+        <section id="Window2">
+            <div class="divExitButton">
+                <button class="exitButton" onclick="windowHide(2)">
+                    <img src="assets/exitButton.png" alt="" class="imgFunctions">
+                </button>
+            </div>
+            <div id="selection">
+                <button id="" class="categories" onclick="showMenu(1)">WOMENS</button></a><br><br>
+                <button id="" class="categories" onclick="showMenu(2)">MENS</button></a><br><br>
+                <button id="" class="categories" onclick="showMenu(3)">GIFTS</button></a><br><br>
+                <button id="" class="categories" onclick="showMenu(4)">ABOUT US</button></a><br><br><br>
+                <button class="helpCenter">Customer Service</button><br><br>
+                <button class="helpCenter">Call Us</button><br><br>
+                <button class="helpCenter">My Account</button><br><br>
+                <button class="helpCenter">Store Locator</button>
+            </div>
+            <div id="cat1">
+                <button class="backArrow" onclick="hideMenu(1)">← </button>
+                <div class="catContainer">
+                    <p class="catName">WOMENS</p>
+                    <button class="listButton" onclick="showList(1)">Collections ↓</button>
+                    <div class="list" id="l1" style="display: none;">
+                        <p class="subSelectionMenu"><a href="empty.html" class="link">Womens's Spring Summer 2025 Pre Collection</a></p>
+                        <p class="subSelectionMenu"><a href="empty.html" class="link">Women's AW24 Collection</a></p>
+                        <p class="subSelectionMenu"><a href="empty.html" class="link">Women's AW24 Pre Collection</a></p>
+                    </div>
+                    <button class="listButton">New in</button>
+                    <button class="listButton" onclick="showList(2)">Ready-to-Wear ↓</button>
+                    <div class="list" id="l2" style="display: none;">
+                        <p class="subSelectionMenu"><a href="womensItemsRTW.html" class="link">View all</a></p>
+                        <p class="subSelectionMenu"><a href="empty.html" class="link">Tailoring</a></p>
+                        <p class="subSelectionMenu"><a href="empty.html" class="link">Coats and Outerwear</a></p>
+                        <p class="subSelectionMenu"><a href="empty.html" class="link">Jackets</a></p>
+                        <p class="subSelectionMenu"><a href="empty.html" class="link">Dresses</a></p>
+                        <p class="subSelectionMenu"><a href="empty.html" class="link">Knitwear</a></p>
+                        <p class="subSelectionMenu"><a href="empty.html" class="link">Leather and Shearling</a></p>
+                        <p class="subSelectionMenu"><a href="empty.html" class="link">Denim</a></p>
+                        <p class="subSelectionMenu"><a href="empty.html" class="link">Tops and Shirts</a></p>
+                        <p class="subSelectionMenu"><a href="empty.html" class="link">T-shirts and Sweatshirts</a></p>
+                        <p class="subSelectionMenu"><a href="empty.html" class="link">Skirts</a></p>
+                        <p class="subSelectionMenu"><a href="empty.html" class="link">Trousers</a></p>
+                    </div>
+                    <button class="listButton" onclick="showList(3)">Handbags ↓</button>
+                    <div class="list" id="l3" style="display: none;">
+                        <p class="subSelectionMenu"><a href="empty.html" class="link">View All</a></p>
+                        <p class="subSelectionMenu"><a href="empty.html" class="link">Shoulder Bags</a></p>
+                        <p class="subSelectionMenu"><a href="empty.html" class="link">Crossbody Bags</a></p>
+                        <p class="subSelectionMenu"><a href="empty.html" class="link">Top Handles</a></p>
+                        <p class="subSelectionMenu"><a href="empty.html" class="link">Mini Bags</a></p>
+                        <p class="subSelectionMenu"><a href="empty.html" class="link">Clutches</a></p>
+                    </div>
+                    <button class="listButton" onclick="showList(4)">Shoes ↓</button>
+                    <div class="list" id="l4" style="display: none;">
+                        <p class="subSelectionMenu"><a href="empty.html" class="link">View All</a></p>
+                        <p class="subSelectionMenu"><a href="empty.html" class="link">Boots</a></p>
+                        <p class="subSelectionMenu"><a href="empty.html" class="link">Pumps</a></p>
+                        <p class="subSelectionMenu"><a href="empty.html" class="link">Sneakers</a></p>
+                        <p class="subSelectionMenu"><a href="empty.html" class="link">Flats Shoes</a></p>
+                        <p class="subSelectionMenu"><a href="empty.html" class="link">Sandal and Slides</a></p>
+                    </div>
+                    <button class="listButton" onclick="showList(5)">Accessesories ↓</button>
+                    <div class="list" id="l5" style="display: none;">
+                        <p class="subSelectionMenu"><a href="empty.html" class="link">View All</a></p>
+                        <p class="subSelectionMenu"><a href="empty.html" class="link">Wallets and Cardholder</a></p>
+                        <p class="subSelectionMenu"><a href="empty.html" class="link">Jewellery</a></p>
+                        <p class="subSelectionMenu"><a href="empty.html" class="link">Scarves</a></p>
+                        <p class="subSelectionMenu"><a href="empty.html" class="link">Sunglasses</a></p>
+                        <p class="subSelectionMenu"><a href="empty.html" class="link">Belts</a></p>
+                        <p class="subSelectionMenu"><a href="empty.html" class="link">Other Accessories</a></p>
+                    </div>
+                    <button class="listButton" onclick="showList(6)">Jewellery ↓</button>
+                    <div class="list" id="l6" style="display: none;">
+                        <p class="subSelectionMenu"><a href="empty.html" class="link">View All</a></p>
+                        <p class="subSelectionMenu"><a href="empty.html" class="link">Necklaces and Pendants</a></p>
+                        <p class="subSelectionMenu"><a href="empty.html" class="link">Earrings</a></p>
+                        <p class="subSelectionMenu"><a href="empty.html" class="link">Bracelets</a></p>
+                        <p class="subSelectionMenu"><a href="empty.html" class="link">Rings</a></p>
+                    </div>
+                </div>
+            </div>
+            <div id="cat2">
+                <button class="backArrow" onclick="hideMenu(2)">← </button>
+                <div class="catContainer">
+                    <p class="catName">MENS</p>
+                    <button class="listButton" onclick="showList(7)">Collections ↓</button>
+                    <div class="list" id="l7" style="display: none;">
+                        <p class="subSelectionMenu"><a href="empty.html" class="link">Mens's Spring Summer 2025 Pre Collection</a></p>
+                        <p class="subSelectionMenu"><a href="empty.html" class="link">>Men's AW24 Collection</a</p>
+                        <p class="subSelectionMenu"><a href="empty.html" class="link">Men's AW24 Pre Collection</a></p>
+                    </div>
+                    <button class="listButton">New in</button>
+                    <button class="listButton" onclick="showList(8)">Ready-to-Wear ↓</button>
+                    <div class="list" id="l8" style="display: none;">
+                        <p class="subSelectionMenu"><a href="mensItemsRTW.html" class="link">View all</a></p>
+                        <p class="subSelectionMenu"><a href="empty.html" class="link">Tailoring</a></p>
+                        <p class="subSelectionMenu"><a href="empty.html" class="link">Coats and Outerwear</a></p>
+                        <p class="subSelectionMenu"><a href="empty.html" class="link">Jackets</a></p>
+                        <p class="subSelectionMenu"><a href="empty.html" class="link">Knitwear</a></p>
+                        <p class="subSelectionMenu"><a href="empty.html" class="link">T-shirts and Sweatshirts</a></p>
+                        <p class="subSelectionMenu"><a href="empty.html" class="link">Shirts</a></p>
+                        <p class="subSelectionMenu"><a href="empty.html" class="link">Trousers</a></p>
+                        <p class="subSelectionMenu"><a href="empty.html" class="link">Denim</a></p>
+                        <p class="subSelectionMenu"><a href="empty.html" class="link">Leather and Shearling</a></p>
+                    </div>
+                    <button class="listButton" onclick="showList(9)">Bags ↓</button>
+                    <div class="list" id="l9" style="display: none;">
+                        <p class="subSelectionMenu"><a href="empty.html" class="link">View All</a></p>
+                        <p class="subSelectionMenu"><a href="empty.html" class="link">Totes</a></p>
+                        <p class="subSelectionMenu"><a href="empty.html" class="link">Messenger Bags</a></p>
+                        <p class="subSelectionMenu"><a href="empty.html" class="link">Puches</a></p>
+                        <p class="subSelectionMenu"><a href="empty.html" class="link">Backpacks</a></p>
+                    </div>
+                    <button class="listButton" onclick="showList(10)">Shoes ↓</button>
+                    <div class="list" id="l10" style="display: none;">
+                        <p class="subSelectionMenu"><a href="empty.html" class="link">View All</a></p>
+                        <p class="subSelectionMenu"><a href="empty.html" class="link">Boots</a></p>
+                        <p class="subSelectionMenu"><a href="empty.html" class="link">Loafers and Lace Ups</a></p>
+                        <p class="subSelectionMenu"><a href="empty.html" class="link">Sneakers</a></p>
+                        <p class="subSelectionMenu"><a href="empty.html" class="link">Sandals and Slides</a></p>
+                    </div>
+                    <button class="listButton" onclick="showList(11)">Accessesories ↓</button>
+                    <div class="list" id="l11" style="display: none;">
+                        <p class="subSelectionMenu"><a href="empty.html" class="link">View All</a></p>
+                        <p class="subSelectionMenu"><a href="empty.html" class="link">Wallets and Cardholders</a></p>
+                        <p class="subSelectionMenu"><a href="empty.html" class="link">Jewellery</a></p>
+                        <p class="subSelectionMenu"><a href="empty.html" class="link">Sunglasses</a></p>
+                        <p class="subSelectionMenu"><a href="empty.html" class="link">Scarves</a></p>
+                        <p class="subSelectionMenu"><a href="empty.html" class="link">Ties</a></p>
+                        <p class="subSelectionMenu"><a href="empty.html" class="link">Belts</a></p>
+                        <p class="subSelectionMenu"><a href="empty.html" class="link">Other Accessories</a></p>
+                    </div>
+                    <button class="listButton" onclick="showList(12)">Jewellery ↓</button>
+                    <div class="list" id="l12" style="display: none;">
+                        <p class="subSelectionMenu"><a href="empty.html" class="link">View All</a></p>
+                        <p class="subSelectionMenu"><a href="empty.html" class="link">Necklaces</a></p>
+                        <p class="subSelectionMenu"><a href="empty.html" class="link">Bracelets</a></p>
+                        <p class="subSelectionMenu"><a href="empty.html" class="link">Rings</a></p>
+                    </div>
+                </div>
+            </div>
+            <div id="cat3">
+                <button class="backArrow" onclick="hideMenu(3)">← </button>
+                <div class="catContainer">
+                    <p class="catName">Gifts</p>
+                    <p class="selectionMenu"><a href="empty.html" class="link">Gifts for Him</a></p>
+                    <p class="selectionMenu"><a href="empty.html" class="link">Gifts for Her</a></p>
+                </div>
+            </div>
+            <div id="cat4">
+                <button class="backArrow" onclick="hideMenu(4)">← </button>
+                <div class="catContainer">
+                    <p class="catName">About Us</p>
+                    <p class="selectionMenu"><a href="empty.html" class="link">Stories</a></p>
+                    <p class="selectionMenu"><a href="empty.html" class="link">Collection Library</a></p>
+                </div>
+            </div>
+        </section>
+
+        <section id="cart">
+
+            <div id="userCart">
+                YOUR CART
+            </div>
+
+            <div id="cartContent">
+                You haven't added any items to your cart.
+            </div>
+
+            <div id="newCollection">
+                <div class="textCollection">
+                    <p id="txtCollection">WOMEN'S SS25 COLLECTION</p>
+                    <p id="collectionButton">DISCOVER THE COLLECTION</p>
+                </div>
+            </div>
+
+            <div id="recentItems">
+                <div class="txtViewed">Recently Viewed</div>
+                <div id="recentItemsContainer">
+                    <div class="imgContainer">
+                        <img src="" alt="ItemImgLibrary return:0" class="noImg">
+                        <p class="itemName"> Suit Pants Fitted - Black</p>
+                        <p class="itemPrice"> $ 2400</p>
+                    </div>
+                    <div class="imgContainer">
+                        <img src="" alt="ItemImgLibrary return:0" class="noImg">
+                        <p class="itemName"> Pleated Skirt - Midi - Black</p>
+                        <p class="itemPrice"> $ 2400</p>
+                    </div>
+                    <div class="imgContainer">
+                        <img src="" alt="ItemImgLibrary return:0" class="noImg">
+                        <p class="itemName"> Skull Sweater - Indigo</p>
+                        <p class="itemPrice"> $ 760</p>
+                    </div>
+                    <div class="imgContainer">
+                        <img src="" alt="ItemImgLibrary return:0" class="noImg">
+                        <p class="itemName"> Mini Jacket Dress - Black</p>
+                        <p class="itemPrice"> $ 930</p>
+                    </div>
+                    <div class="imgContainer">
+                        <img src="" alt="ItemImgLibrary return:0" class="noImg">
+                        <p class="itemName"> Wool Felt Peacoat - Black</p>
+                        <p class="itemPrice"> $ 2490</p>
+                    </div>
+                    <div class="imgContainer">
+                        <img src="" alt="ItemImgLibrary return:0" class="noImg">
+                        <p class="itemName"> Tailored Peacoat - Grey</p>
+                        <p class="itemPrice"> $ 2400</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="faq">
+                <h5>Easy returns</h5>
+                <p class="faq">
+                    We provde free pick up for your returns: you have 30 days from delivery to follow our quick and easy return procedure*. Alternatively, orders can be returned in one of our stores. *Exceptions apply.
+                </p>
+
+                <h5>Contact us</h5>
+                <p class="faq">
+                    Our Client Service is available Monday to Saturday from 9am to 6.40pm
+                    <br>
+                    <br>
+                    Call us <a href="" class="contact">+00 12 34 56 78 90</a>
+                    <br>
+                    <br>
+                    <a href="" class="contact">Accessibility</a>
+                    <br>
+                    <br>
+                    <a href="" class="contact">Unavailable</a>
+                </p>
+            </div>
+        </section>
+
+        <section id="notPhone">
+            <p class="noWebsite">Website Not Avaliable on Tablet, Laptop or PC</p>
+        </section>
+    </body>
+</html>
+<!-- Origianl length: 332 lines -->

@@ -1,0 +1,620 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.companyFont{
+    font-family: "Lancelot", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+    background-color: transparent;
+}
+
+#notPhone{
+    display: none;
+    width: 100vw;
+}
+
+.noWebsite{
+    margin: auto;
+    margin-top: 42vh;
+    width: 90%;
+    height: 10vh;
+    background-color: black;
+    color: white;
+    text-align: center;
+    line-height: 10vh;
+}
+
+/* Header Styling */
+
+#fixedPos{
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    transition: top 0.2s ease-in-out;
+}
+
+.headerContent{
+    width: 100vw;
+    max-width: 100vw;
+    height: 8vh;
+    background-color: transparent;
+    position: relative;
+}
+
+#companyName{
+    position: absolute;
+    top: 21%;
+    left: 3%;
+    font-size: 1.4em;
+    width: 20%;
+    padding: 1vw 2vh 0 2vh;
+}
+
+#headerFunctions{
+    position: absolute;
+    top: 25%;
+    right: 3vw;
+}
+
+#headerFunctions td{
+    width: 10vw;
+}
+
+.imgFunctions{
+    width: 20px;
+    height: 20px;
+}
+
+#headerFunctions button{
+    background-color: transparent;
+    border: none;
+}
+
+/* Main-Page Styling */
+
+#womensFash{
+    height: 100vh;
+    max-height: 100vh;
+    background-image: url('assets/womensFashion.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 65% 10%;
+    position: relative;
+}
+
+#mensFash{
+    height: 92vh;
+    background-image: url('assets/mensFashion.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 65% 10%;
+    position: relative;
+}
+
+.txtCat{
+    width: 100%;
+    color: white;
+    text-shadow: -1vw 1vw 1vw rgba(0, 0, 0, 0.7);
+    font-size: 1.7em;
+    text-align: center;
+    position: absolute;
+    bottom: 12%;
+}
+
+.button{
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding: 3% 0;
+    position: absolute;
+    bottom: 3%;
+}
+
+.button p{
+    width: 30%;
+    margin: auto;
+    color: white;
+    text-align: center;
+    padding: 3% 2%;
+    background-color: black;
+}
+
+#bags{
+    box-sizing: border-box;
+    padding: 6vw;
+}
+
+#bags #womensBags{
+    height: 70vh;
+    background-image: url('assets/womensBags.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 65% 10%;
+    position: relative;
+}
+
+#bags #mensBags{
+    height: 70vh;
+    background-image: url('assets/mensBags.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 65% 10%;
+    position: relative;
+}
+
+/* Services Styling */
+
+section#services{
+    margin-top: 2vh;
+    height: auto;
+    background-color: white;
+}
+
+.container{
+    padding: 4vw;
+}
+
+.services{
+    position: relative;
+}
+
+.imgSize{
+    margin-top: 2vh;
+    height: 20vh;
+    width: 45vw;
+    background-color: red;
+}
+
+.txtLine{
+    width: 35%;
+    text-align: center;
+    position: absolute;
+    top: 47%;
+    right: 6%;
+    color: black;
+}
+
+/* EndPage Styling */
+
+.endContainer{
+    padding: 4vw;
+    box-sizing: border-box;
+    height: auto;
+    background-color: black;
+    font-family: "Cormorant", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.linkEnd{
+    color: white;
+    font-size: 1em;
+}
+
+#s1, #s2, #s3{
+    display: none;
+}
+
+.linkEnd .txtButton{
+    width: 100%;
+    text-align: center;
+    padding-bottom: 2vh;
+    color: white;
+}
+
+.endContainer .endButton{
+    width: 100%;
+    text-align: center;
+    padding: 10vw;
+    background-color: transparent;
+    color: white;
+    font-size: 1.2em;
+    border: none;
+    font-family: "Cormorant", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.endContainer #end{
+    height: 30vh;
+    text-align: center;
+    line-height: 30vh;
+    color: white;
+    font-size: 3em;
+}
+
+.footer{
+    text-align: center;
+    font-size: 0.5em;
+    color: gray;
+}
+
+/* Window styling */
+
+#Window1, #Window2{
+    z-index: 100;
+    position: fixed;
+    top: -200vh;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    height: 200vh;
+    background-color: white;
+}
+
+/* Search Styling */
+
+.divExitButton{
+    position: relative;
+}
+
+.exitButton{
+    position: absolute;
+    top: 5.7vh;
+    right: 8vw;
+    background-color: transparent;
+    border: none;
+}
+
+#txtSearch{
+    position: absolute;
+    top: 2vh;
+    left: 8vw;
+    font-size: 1.8em;
+}
+
+#txtSearch p{
+    margin-top: 3.4vh;
+    font-family: "Lancelot", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.sbFunction{
+    margin: auto;
+    width: 90%;
+    border-bottom: 1px solid black;
+    margin-top: 12vh;
+    padding-left: 3.5vw;
+    overflow: auto;
+}
+
+.sb{
+    float: left;
+    width: auto;
+}
+
+input#sb{
+    padding-left: 7%;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 2vh;
+    width: 80%;
+    padding-top: 1vh;
+    font-size: 1em;
+    font-family: "Lancelot", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#trending{
+    margin-top: 2vh;
+    font-family: "Cormorant", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+#trending #bold{
+    color: black;
+    font-weight: bold;
+    font-size: 1.4em;
+    text-align: left;
+    padding-left: 4vw;
+}
+
+#trending p.txt{
+    padding-top: 2vh;
+    color: black;
+    text-align: left;
+    padding-left: 4vw;
+}
+
+/* Menu Styling */
+
+#selection{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    position: relative;
+    margin-top: 20vh;
+}
+
+.categories{
+    font-family: "Cormorant", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 1.8em;
+    font-weight: 550;
+    background-color: transparent;
+    border: none;
+    color: black;
+}
+
+.helpCenter{
+    font-family: "Cormorant", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 1.2em;
+    font-weight: 300;
+    background-color: transparent;
+    border: none;
+    color: black;
+}
+
+#cat1 ,#cat2 ,#cat3 ,#cat4{
+    z-index: 110;
+    position: fixed;
+    top: -200vh;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    height: 200vh;
+    background-color: white;
+}
+
+.backArrow{
+    position: absolute;
+    top: 5vh;
+    left: 10vw;
+    background-color: transparent;
+    font-size: 1.2em;
+    color: black;
+}
+
+.catContainer{
+    font-family: "Cormorant", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    width: 90%;
+    height: 80vh;
+    margin: auto;
+    position: absolute;
+    top: 10vh;
+    left: 5%;
+    text-align: center;
+    padding-top: 5vh;
+    overflow-y: auto;
+}
+
+.listButton{
+    padding: 2vw;
+    width: 100%;
+    text-align: center;
+    font-family: "Cormorant", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    background-color: transparent;
+    font-size: 1.5em;
+    color: black;
+}
+
+.list{
+    width: 70%;
+    margin: auto;
+    display: none;
+    padding-bottom: 2vh;
+}
+
+.catName{
+    width: 40%;
+    margin: auto;
+    padding-bottom: 2vh;
+    font-size: 2em;
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+
+.selectionMenu{
+    width: 100%;
+    padding: 1vh 0;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.subSelectionMenu{
+    width: 100%;
+    padding: 1vh 0;
+    font-size: 1em;
+    text-align: center;
+}
+
+/* itemStyling */
+
+.itemContainer{
+    margin-top: 10vh;
+    height: auto;
+    overflow: auto;
+    padding: 4vw;
+}
+
+.imgContainerCol{
+    position: relative;
+    height: 48vh;
+    float: left;
+}
+
+.catNameTop{
+    font-family: "Cormorant", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 1.5em;
+    padding-bottom: 4vh;
+}
+
+.imgContainerCol .noImgCol{
+    background-color: lightgray;
+    height: 40vh;
+    width: 45vw;
+    border: 1px solid white;
+}
+
+/* Cart styling */
+
+section#cart{
+    margin-top: 8vh;
+    color: black;
+}
+
+#userCart{
+    font-family: "Cormorant", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 2em;
+    padding-left: 3vw;
+}
+
+#cartContent{
+    font-size: small;
+    padding-left: 3vw;
+}
+
+/* Cart styling (New Collection) */
+
+#newCollection{
+    height: 50vh;
+    max-height: 50vh;
+    background-image: url('assets/newCollection.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 65% 10%;
+    margin-top: 7vh;
+}
+
+.textCollection{
+    width: 54%;
+    height: 100%;
+    margin-left: 5%;
+    position: relative;
+}
+
+#txtCollection{
+    width: 90%;
+    color: black;
+    text-shadow: 1vw 1vw 1vw rgba(0, 0, 0, 0.7);
+    font-size: 1.7em;
+    text-align: left;
+    position: absolute;
+    bottom: 60%;
+}
+
+#collectionButton{
+    background-color: black;
+    color: white;
+    padding: 3% 2%;
+    position: absolute;
+    bottom: 47%;
+}
+
+/* Cart styling (Recent Items) */
+
+#recentItems{
+    font-family: "Cormorant", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    height: 58vh;
+}
+
+.txtViewed{
+    font-size: 1.7em;
+}
+
+#recentItemsContainer{
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    margin-top: 3vh;
+}
+
+.imgContainer{
+    position: relative;
+    height: 48vh;
+    border-left:0.5px solid white;
+    border-right: 1px solid white;
+}
+
+.noImg{
+    background-color: lightgray;
+    height: 40vh;
+    width: 50vw;
+}
+
+.itemName{
+    max-width: 40vw;
+    position: absolute;
+    left: 2%;
+    bottom: 11%;
+    text-align: justify;
+}
+
+.itemPrice{
+    max-width: 100%;
+    position: absolute;
+    left: 2%;
+    bottom: 6%;
+}
+
+/* Cart styling (FAQ) */
+
+#faq{
+    margin-top: 1px;
+    background-color: black;
+    color: rgb(196, 196, 196);
+    padding-bottom: 20vh;
+}
+
+h5{
+    text-align: center;
+    padding-top: 3vh;
+}
+
+p.faq{
+    text-align: center;
+    padding-top: 3vh;
+    margin: auto;
+    width: 50%;
+    font-size: 0.8em;
+}
+
+.contact{
+    color: white;
+}
+
+@media only screen and (min-width: 468px){
+
+
+    #fixedPos, #Window1, #Window2, #mainContent, #services, #endPage, #cart{
+        display: none;
+    }
+    #notPhone{
+        display: block;
+    }
+
+}
+
+/* Origianl length: 964 lines */
